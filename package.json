@@ -12,16 +12,18 @@
     "prod": "yarn build; node dist/server.js"
   },
   "license": "ISC",
-	"engines": {
-    "node": ">=9 <=10",
-		"npm": "^5.6.0",
+  "engines": {
+    "node": ">=9 <=11",
+    "npm": "^5.6.0",
     "yarn": "^1.6.0"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "body-parser": "^1.18.2",
+    "botkit": "0.7.4",
     "cors": "^2.8.4",
+    "dotenv": "^8.0.0",
     "ejs": "^2.5.9",
     "express": "^4.16.3",
     "morgan": "^1.9.0"
