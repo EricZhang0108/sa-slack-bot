@@ -59,10 +59,12 @@ controller.setupWebserver(process.env.PORT || 3001, (err, webserver) => {
   });
 });
 
+// outgoing webhook
 controller.on('outgoing_webhook', (bot, message) => {
   bot.replyPublic(message, 'yeah yeah, old-town-bot is here partner');
 });
 
+// direct message replies
 controller.on('direct_message', (bot, message) => {
   bot.reply(message, 'Yeehaw partner');
 });
